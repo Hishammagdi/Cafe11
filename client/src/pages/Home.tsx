@@ -13,78 +13,78 @@ export default function Home() {
 
   const menuData = {
     hot: {
-      title: 'ركن المزاج العالي',
-      subtitle: 'مشروبات سخنة',
+      title: 'High Mood Corner',
+      subtitle: 'Hot Drinks',
       icon: Coffee,
       items: [
         {
-          name: 'قهوة تركي',
-          desc: 'بن محوج أصلي (سادة، مظبوط، زيادة)',
-          price: '35 ج.م'
+          name: 'Turkish Coffee',
+          desc: 'Original ground coffee (plain, mazbout, extra)',
+          price: '35 EGP'
         },
         {
-          name: 'شاي العروسة',
-          desc: 'في الخمسينة (نعناع، قرنفل، أو سادة)',
-          price: '20 ج.م'
+          name: 'Bride\'s Tea',
+          desc: 'In the fifties (mint, cloves, or plain)',
+          price: '20 EGP'
         },
         {
-          name: 'سحلب ملوكي',
-          desc: 'لبن طبيعي، مكسرات، وجوز هند',
-          price: '50 ج.م'
+          name: 'Royal Sahlab',
+          desc: 'Natural milk, nuts, and coconut',
+          price: '50 EGP'
         },
         {
-          name: 'نسكافيه بلاك',
-          desc: 'رغوة غنية تظبط اليوم',
-          price: '40 ج.م'
+          name: 'Nescafe Black',
+          desc: 'Rich foam to fix your day',
+          price: '40 EGP'
         }
       ]
     },
     cold: {
-      title: 'ركن فرفش نفسك',
-      subtitle: 'مشروبات باردة',
+      title: 'Refresh Yourself Corner',
+      subtitle: 'Cold Drinks',
       icon: Droplets,
       items: [
         {
-          name: 'ليمون نعناع منعش',
-          desc: 'ليمون فريش مع ورق نعناع أخضر',
-          price: '45 ج.م'
+          name: 'Refreshing Lemon Mint',
+          desc: 'Fresh lemon with green mint leaves',
+          price: '45 EGP'
         },
         {
-          name: 'مانجو الإسماعيلية',
-          desc: 'عصير مانجو طبيعي تقيل',
-          price: '60 ج.م'
+          name: 'Ismailia Mango',
+          desc: 'Thick natural mango juice',
+          price: '60 EGP'
         },
         {
-          name: 'آيس كوفي كراميل',
-          desc: 'قهوة مثلجة مع صوص الكراميل',
-          price: '70 ج.م'
+          name: 'Caramel Ice Coffee',
+          desc: 'Iced coffee with caramel sauce',
+          price: '70 EGP'
         }
       ]
     },
     dessert: {
-      title: 'ركن التحلية',
-      subtitle: 'حلويات خفيفة',
+      title: 'Sweetening Corner',
+      subtitle: 'Light Desserts',
       icon: Cake,
       items: [
         {
-          name: 'طاجن أم علي',
-          desc: 'بالقشطة والمكسرات من الفرن',
-          price: '65 ج.م'
+          name: 'Om Ali Tagine',
+          desc: 'With cream and nuts from the oven',
+          price: '65 EGP'
         },
         {
-          name: 'رز بلبن فرن',
-          desc: 'زي بتاع زمان وبوش محمر',
-          price: '40 ج.م'
+          name: 'Rice with Milk Baked',
+          desc: 'Like the old days with toasted bread',
+          price: '40 EGP'
         }
       ]
     }
   };
 
   const galleryImages = [
-    { src: '/images/turkish_coffee.jpg', alt: 'قهوة تركي' },
-    { src: '/images/lemon_mint.jpg', alt: 'ليمون نعناع' },
-    { src: '/images/om_ali.jpg', alt: 'أم علي' },
-    { src: '/images/hero_coffee_breakfast.jpg', alt: 'فطار مصري' }
+    { src: '/images/turkish_coffee.jpg', alt: 'Turkish Coffee' },
+    { src: '/images/lemon_mint.jpg', alt: 'Lemon Mint' },
+    { src: '/images/om_ali.jpg', alt: 'Om Ali' },
+    { src: '/images/hero_coffee_breakfast.jpg', alt: 'Egyptian Breakfast' }
   ];
 
   const currentMenu = menuData[activeMenu as keyof typeof menuData];
@@ -100,14 +100,14 @@ export default function Home() {
               <Coffee className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">قهوة ومزاج</h1>
-              <p className="text-sm opacity-90">Kahwa & Mazag</p>
+              <h1 className="text-2xl font-bold">Kahwa & Mazag</h1>
+              <p className="text-sm opacity-90">Coffee & Mood</p>
             </div>
           </div>
           <nav className="hidden md:flex gap-6">
-            <a href="#menu" className="hover:text-accent transition-colors">المنيو</a>
-            <a href="#gallery" className="hover:text-accent transition-colors">الصور</a>
-            <a href="#contact" className="hover:text-accent transition-colors">تواصل معنا</a>
+            <a href="#menu" className="hover:text-accent transition-colors">Menu</a>
+            <a href="#gallery" className="hover:text-accent transition-colors">Gallery</a>
+            <a href="#contact" className="hover:text-accent transition-colors">Contact Us</a>
           </nav>
         </div>
       </header>
@@ -117,10 +117,10 @@ export default function Home() {
         style={{ backgroundImage: `url('/images/hero_coffee_breakfast.jpg')` }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4 fade-in">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">روق بالك عندنا</h2>
-          <p className="text-xl md:text-2xl mb-8 drop-shadow-md">أفضل قهوة وأجمل أوقات في قلب المدينة</p>
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">Relax with us</h2>
+          <p className="text-xl md:text-2xl mb-8 drop-shadow-md">Best coffee and best times in the heart of the city</p>
           <a href="#menu" className="inline-block bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-            شوف المنيو
+            Check the Menu
           </a>
         </div>
       </section>
@@ -129,9 +129,9 @@ export default function Home() {
       <section id="menu" className="py-16 md:py-24 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title">المنيو</h2>
+            <h2 className="section-title">Menu</h2>
             <div className="golden-divider mx-auto w-32 mb-8"></div>
-            <p className="text-lg text-muted-foreground">اختر من أفضل المشروبات والحلويات</p>
+            <p className="text-lg text-muted-foreground">Choose from the best drinks and desserts</p>
           </div>
 
           {/* Menu Tabs */}
@@ -183,9 +183,9 @@ export default function Home() {
       <section id="gallery" className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title text-card-foreground">معرض الصور</h2>
+            <h2 className="section-title text-card-foreground">Photo Gallery</h2>
             <div className="golden-divider mx-auto w-32 mb-8"></div>
-            <p className="text-lg text-muted-foreground">تذوق الجمال من خلال عدستنا</p>
+            <p className="text-lg text-muted-foreground">Taste the beauty through our lens</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -214,7 +214,7 @@ export default function Home() {
       <section id="contact" className="py-16 md:py-24 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title">تواصل معنا</h2>
+            <h2 className="section-title">Contact Us</h2>
             <div className="golden-divider mx-auto w-32 mb-8"></div>
           </div>
 
@@ -227,9 +227,9 @@ export default function Home() {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">الموقع</h3>
-                <p className="text-muted-foreground">المعادي، القاهرة</p>
-                <p className="text-sm text-muted-foreground mt-1">بجانب النيل مباشرة</p>
+                <h3 className="text-xl font-bold text-primary mb-2">Location</h3>
+                <p className="text-muted-foreground">Maadi, Cairo</p>
+                <p className="text-sm text-muted-foreground mt-1">Right next to the Nile</p>
               </div>
 
               {/* Phone */}
@@ -239,9 +239,9 @@ export default function Home() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">الهاتف</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">Phone</h3>
                 <p className="text-muted-foreground">+20 100 123 4567</p>
-                <p className="text-sm text-muted-foreground mt-1">متاح طول الوقت</p>
+                <p className="text-sm text-muted-foreground mt-1">Available all the time</p>
               </div>
 
               {/* Email */}
@@ -251,9 +251,9 @@ export default function Home() {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">البريد الإلكتروني</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">Email</h3>
                 <p className="text-muted-foreground">info@kahwa-mazag.com</p>
-                <p className="text-sm text-muted-foreground mt-1">رد سريع مضمون</p>
+                <p className="text-sm text-muted-foreground mt-1">Fast response guaranteed</p>
               </div>
             </div>
 
@@ -261,8 +261,8 @@ export default function Home() {
             <div className="bg-card rounded-lg overflow-hidden shadow-lg h-80 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-accent mx-auto mb-4" />
-                <p className="text-muted-foreground text-lg">خريطة الموقع</p>
-                <p className="text-sm text-muted-foreground mt-2">المعادي، القاهرة</p>
+                <p className="text-muted-foreground text-lg">Location Map</p>
+                <p className="text-sm text-muted-foreground mt-2">Maadi, Cairo</p>
               </div>
             </div>
           </div>
@@ -272,8 +272,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container text-center">
-          <p className="mb-2">© 2026 كافيه قهوة ومزاج - جميع الحقوق محفوظة</p>
-          <p className="text-sm opacity-75">صُنع بـ ❤️ من أجلك</p>
+          <p className="mb-2">© 2026 Kahwa & Mazag Cafe - All rights reserved</p>
+          <p className="text-sm opacity-75">Made with ❤️ for you</p>
         </div>
       </footer>
     </div>

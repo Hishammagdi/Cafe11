@@ -2,8 +2,8 @@ import { Coffee, Droplets, Cake, MapPin, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
 
 /**
- * Egyptian Cafe Landing Page
- * Design: Modern Egyptian Warmth
+ * German Cafe Landing Page
+ * Design: Modern German Warmth
  * Colors: Brown (#6B4423), Gold (#D4A574), Beige (#F5E6D3), Cream (#FFFBF5)
  * Typography: Cairo Arabic Font Family
  */
@@ -20,22 +20,22 @@ export default function Home() {
         {
           name: 'Turkish Coffee',
           desc: 'Original ground coffee (plain, mazbout, extra)',
-          price: '35 EGP'
+          price: '3.50 €'
         },
         {
           name: 'Bride\'s Tea',
           desc: 'In the fifties (mint, cloves, or plain)',
-          price: '20 EGP'
+          price: '2.00 €'
         },
         {
           name: 'Royal Sahlab',
           desc: 'Natural milk, nuts, and coconut',
-          price: '50 EGP'
+          price: '5.00 €'
         },
         {
           name: 'Nescafe Black',
           desc: 'Rich foam to fix your day',
-          price: '40 EGP'
+          price: '4.00 €'
         }
       ]
     },
@@ -47,17 +47,17 @@ export default function Home() {
         {
           name: 'Refreshing Lemon Mint',
           desc: 'Fresh lemon with green mint leaves',
-          price: '45 EGP'
+          price: '4.50 €'
         },
         {
           name: 'Ismailia Mango',
           desc: 'Thick natural mango juice',
-          price: '60 EGP'
+          price: '6.00 €'
         },
         {
           name: 'Caramel Ice Coffee',
           desc: 'Iced coffee with caramel sauce',
-          price: '70 EGP'
+          price: '7.00 €'
         }
       ]
     },
@@ -69,12 +69,12 @@ export default function Home() {
         {
           name: 'Om Ali Tagine',
           desc: 'With cream and nuts from the oven',
-          price: '65 EGP'
+          price: '6.50 €'
         },
         {
           name: 'Rice with Milk Baked',
           desc: 'Like the old days with toasted bread',
-          price: '40 EGP'
+          price: '4.00 €'
         }
       ]
     }
@@ -84,7 +84,7 @@ export default function Home() {
     { src: '/images/turkish_coffee.jpg', alt: 'Turkish Coffee' },
     { src: '/images/lemon_mint.jpg', alt: 'Lemon Mint' },
     { src: '/images/om_ali.jpg', alt: 'Om Ali' },
-    { src: '/images/hero_coffee_breakfast.jpg', alt: 'Egyptian Breakfast' }
+    { src: '/images/hero_coffee_breakfast.jpg', alt: 'German Breakfast' }
   ];
 
   const currentMenu = menuData[activeMenu as keyof typeof menuData];
@@ -100,8 +100,8 @@ export default function Home() {
               <Coffee className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Kahwa & Mazag</h1>
-              <p className="text-sm opacity-90">Coffee & Mood</p>
+              <h1 className="text-2xl font-bold">Mazag Al Arab</h1>
+              <p className="text-sm opacity-90">German Cafe</p>
             </div>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -228,8 +228,8 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-2">Location</h3>
-                <p className="text-muted-foreground">Maadi, Cairo</p>
-                <p className="text-sm text-muted-foreground mt-1">Right next to the Nile</p>
+                <p className="text-muted-foreground">Berlin, Germany</p>
+                <p className="text-sm text-muted-foreground mt-1">In the heart of the city</p>
               </div>
 
               {/* Phone */}
@@ -240,7 +240,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-2">Phone</h3>
-                <p className="text-muted-foreground">+20 100 123 4567</p>
+                <p className="text-muted-foreground">+49 30 123 4567</p>
                 <p className="text-sm text-muted-foreground mt-1">Available all the time</p>
               </div>
 
@@ -252,7 +252,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-2">Email</h3>
-                <p className="text-muted-foreground">info@kahwa-mazag.com</p>
+                <p className="text-muted-foreground">info@mazagalarab.de</p>
                 <p className="text-sm text-muted-foreground mt-1">Fast response guaranteed</p>
               </div>
             </div>
@@ -262,7 +262,7 @@ export default function Home() {
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-accent mx-auto mb-4" />
                 <p className="text-muted-foreground text-lg">Location Map</p>
-                <p className="text-sm text-muted-foreground mt-2">Maadi, Cairo</p>
+                <p className="text-sm text-muted-foreground mt-2">Berlin, Germany</p>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container text-center">
-          <p className="mb-2">© 2026 Kahwa & Mazag Cafe - All rights reserved</p>
+          <p className="mb-2">© 2026 Mazag Al Arab Cafe - All rights reserved</p>
           <p className="text-sm opacity-75">Made with ❤️ for you</p>
         </div>
       </footer>
